@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo/Style.css">
+</head>
+<body>
+    <form action="./seguridad/Security.php" method="post">
+        <div class="container">
+            <h1 class="access">Acceso</h1>
+            <!-- Nombre de Usuario -->
+            <div>
+                <label for="user">Usuario:</label>
+                <input type="text" name="user" class="user" required maxlength="15" placeholder="luis">
+            </div>
+            <!-- Contraseña -->
+            <div>
+                <label for="pass">Contraseña:</label>
+                <input type="password" name="pass" class="user" required maxlength="12" placeholder="mendoza">
+            </div>
+            <!-- Edad -->
+            <div>
+                <label for="age">Edad:</label>
+                <input type="number" name="age" class="age" required pattern="" min="1" max="99" placeholder="<=17 o >=18">
+            </div>
+            <!-- Boton -->
+            <div>
+                <input type="submit" value="Iniciar Sesión" class="button">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
